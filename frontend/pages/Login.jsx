@@ -3,6 +3,8 @@ import '../styles/login.css'
 import { Link, Navigate } from 'react-router-dom'
 import { Context } from '../src/main'
 import toast from 'react-hot-toast'
+import axios from 'axios'
+import { server } from '../src/main'
 
 function Login() {
     const {isAuthenticated, setisAuthenticated} = useContext(Context)
